@@ -23,3 +23,7 @@ Y86-64-Simulator/
 * 如果你的 cpu 可执行文件为 `.cpu`，运行 `python test.py --bin ./cpu`
 
 * 如果你的 cpu 需要解释器，运行 `python test.py --bin "python cpu.py"`
+
+> [!note]
+>
+> 将你最终用于测试的命令写入 `test.sh`，方便我们最终进行测试。
