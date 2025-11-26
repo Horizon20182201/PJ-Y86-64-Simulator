@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build
+CMAKE_BINARY_DIR = /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build/CMakeFiles /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

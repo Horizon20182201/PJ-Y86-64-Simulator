@@ -1,8 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build/cmake_install.cmake",
-		"/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build/apps/y86sim/cmake_install.cmake"
+		"/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

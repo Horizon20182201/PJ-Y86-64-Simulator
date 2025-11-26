@@ -1,6 +1,6 @@
-apps/y86sim/CMakeFiles/y86sim.dir/main.cpp.o: \
-  /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/apps/y86sim/main.cpp \
-  /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/include/y86/loader.h \
+CMakeFiles/y86core.dir/src/stepper.cpp.o: \
+  /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/src/stepper.cpp \
+  /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/include/y86/stepper.h \
   /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/include/y86/cpu.h \
   /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/include/y86/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
@@ -840,6 +840,4 @@ apps/y86sim/CMakeFiles/y86sim.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
-  /Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/include/y86/stepper.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono

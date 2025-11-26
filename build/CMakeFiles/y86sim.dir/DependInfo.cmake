@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/apps/y86sim/main.cpp" "apps/y86sim/CMakeFiles/y86sim.dir/main.cpp.o" "gcc" "apps/y86sim/CMakeFiles/y86sim.dir/main.cpp.o.d"
+  "/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/apps/y86sim/main.cpp" "CMakeFiles/y86sim.dir/apps/y86sim/main.cpp.o" "gcc" "CMakeFiles/y86sim.dir/apps/y86sim/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

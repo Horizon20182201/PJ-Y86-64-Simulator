@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

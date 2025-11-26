@@ -6,6 +6,8 @@
 
 namespace y86 {
 
+using Mem = std::unordered_map<u64, u8>;
+
 struct CPU {
     s64 R[REG_NUM]{};
     u64 PC = 0;
@@ -13,7 +15,7 @@ struct CPU {
     Stat stat = Stat::AOK;
 
     // byte-addressable memory (sparse)
-    std::unordered_map<u64, u8> mem;
+    Mem mem;
     // aligned 8B blocks touched (for compact MEM dump)
     std::set<u64> qword_touched;
 
