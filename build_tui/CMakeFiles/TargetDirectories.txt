@@ -1,4 +1,0 @@
-/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles/y86core.dir
-/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles/y86sim.dir
-/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles/edit_cache.dir
-/Users/liuenzhao/Desktop/Code/PJ-Y86-64-Simulator/build_tui/CMakeFiles/rebuild_cache.dir

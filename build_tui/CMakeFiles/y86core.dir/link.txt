@@ -1,2 +1,0 @@
-/usr/bin/ar qc liby86core.a CMakeFiles/y86core.dir/src/cpu.cpp.o CMakeFiles/y86core.dir/src/loader.cpp.o CMakeFiles/y86core.dir/src/stepper.cpp.o
-/usr/bin/ranlib liby86core.a
