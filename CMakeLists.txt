@@ -13,8 +13,7 @@ target_include_directories(nlohmann_json::nlohmann_json
 # y86core library
 add_library(y86core
   src/cpu.cpp
-  src/loader.cpp
-  src/stepper.cpp
+  src/worker.cpp
 )
 target_include_directories(y86core PUBLIC include third_party)
 target_link_libraries(y86core PUBLIC nlohmann_json::nlohmann_json)

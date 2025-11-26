@@ -1,4 +1,4 @@
-#include "y86/cpu.h"
+#include "cpu.h"
 using nlohmann::json;
 namespace y86 {
 

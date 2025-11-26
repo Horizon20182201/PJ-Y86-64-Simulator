@@ -1,8 +1,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-#include "y86/loader.h"
-#include "y86/stepper.h"
+#include "worker.h"
 
 using nlohmann::json;
 using namespace y86;

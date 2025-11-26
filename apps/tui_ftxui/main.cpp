@@ -9,10 +9,9 @@
 #include <thread>
 #include <vector>
 
-#include "y86/loader.h"
-#include "y86/stepper.h"
-#include "y86/cpu.h"
-#include "y86/types.h"
+#include "worker.h"
+#include "cpu.h"
+#include "types.h"
 
 #include <ftxui/component/component.hpp>
 #include <ftxui/component/screen_interactive.hpp>
