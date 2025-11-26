@@ -8,6 +8,7 @@
 #include <sstream>
 #include <thread>
 #include <vector>
+#include <string>
 
 #include "worker.h"
 #include "cpu.h"
@@ -19,6 +20,8 @@
 
 using namespace ftxui;
 using namespace y86;
+
+std::string STAT[5] = {"", "AOK(1)", "HLT(2)", "ADR(3)", "INS(4)"};
 
 struct Model {
   CPU cpu;
@@ -255,7 +258,7 @@ int main(int argc, char** argv) {
     for (size_t i=from;i<n;i++) {
       const auto& j = model.last_logs[i];
       std::ostringstream ss;
-      ss << "PC=" << j["PC"] << " STAT=" << j["STAT"]
+      ss << "PC=" << j["PC"] << " STAT=" << STAT[j["STAT"]]
          << " CC[ZF,SF,OF]=" << j["CC"]["ZF"] << "," << j["CC"]["SF"] << "," << j["CC"]["OF"];
       lines.push_back(text(ss.str()));
     }

@@ -1,29 +1,46 @@
-# Y86 Simulator
+# PJ-Y86-64-Simulator
 
 ## 简介
 
-你将实现一个 Y86-64 指令集模拟器。
+一个 Y86-64 指令集模拟器。
+
+## 启动测试
 
 ```bash
-Y86-64-Simulator/
-│
-├─ test/           # 测试指令文件
-│
-├─ answer/         # 指令执行结果
-│
-├─ test.py         # 测试脚本：运行模拟器 + 对比结果
-│
-└─ ...             # 自定义模拟器代码（cpu.h, cpu.cpp, cpu.py, Makefile 仅供参考）
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_TUI=OFF
+cmake --build build -j
+python3 test.py --bin ./build/y86sim
+# 因为首轮文件缓存/页缓存和分配器还没启动，可能导致运行超时，这个时候再执行一次最后一条指令即可。
 ```
 
-## 测试方法
+或者
 
-运行 `python test.py --bin {你的 cpu 可执行文件路径}`
+```bash
+chmod +x test.sh
+./test.sh
+```
 
-* 如果你的 cpu 可执行文件为 `./cpu`，运行 `python test.py --bin ./cpu`
+## 启动性能评测脚本 bench_y86.py
 
-* 如果你的 cpu 需要解释器，运行 `python test.py --bin "python cpu.py"`
+```bash
+python3 benchmark/bench_y86.py --sim ./build/y86sim --dir ./test --repeat 3 --json benchmark/bench_result.json
+```
 
-> [!note]
->
-> 将你最终用于测试的命令写入 `test.sh`，方便我们最终进行测试。
+脚本运行结果保存在`./benchmark/bench_result.json`
+
+## 启动基于 FTXUI 的终端前端
+
+```bash
+cmake -S . -B build_tui -DCMAKE_BUILD_TYPE=Release -DBUILD_TUI=ON
+cmake --build build_tui -j
+./build_tui/y86_tui test/prog1.yo # 可以换成其它.yo文件
+```
+## 启动 Mini-C → Y86-64 编译器
+
+```bash
+cd minic
+chmod +x ./run.sh
+./run.sh ./test.mc
+```
+
+`.yo`文件保存在`./minic/yo`

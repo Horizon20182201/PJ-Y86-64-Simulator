@@ -2,4 +2,3 @@ temp_answer
 *.o
 build
 build_tui
-Presentation*.md
