@@ -10,7 +10,7 @@ add_library(nlohmann_json::nlohmann_json INTERFACE IMPORTED)
 target_include_directories(nlohmann_json::nlohmann_json
   INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/third_party)
 
-# ---- y86core library ----
+# y86core library
 add_library(y86core
   src/cpu.cpp
   src/loader.cpp
@@ -19,11 +19,11 @@ add_library(y86core
 target_include_directories(y86core PUBLIC include third_party)
 target_link_libraries(y86core PUBLIC nlohmann_json::nlohmann_json)
 
-# ---- CLI app (stdin -> JSON on stdout) ----
+# y86sim
 add_executable(y86sim apps/y86sim/main.cpp)
 target_link_libraries(y86sim PRIVATE y86core)
 
-# ---- optional TUI ----
+# tui_ftxui
 if (BUILD_TUI)
   include(FetchContent)
   # 可固定到某个稳定 tag（例如 v5.0.0）；不写 GIT_TAG 也是可以的。

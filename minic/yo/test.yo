@@ -1,0 +1,17 @@
+0x000: 30f40010000000000000 |   irmovq $4096,%rsp
+0x00a: 801400000000000000 |   call main
+0x013: 00 |   halt
+0x014: a05f |   pushq %rbp
+0x016: 2045 |   rrmovq %rsp,%rbp
+0x018: 30f10800000000000000 |   irmovq $8,%rcx
+0x022: 6114 |   subq %rcx,%rsp
+0x024: 30f04501000000000000 |   irmovq $325,%rax
+0x02e: 4005f8ffffffffffffff |   rmmovq %rax,-8(%rbp)
+0x038: 5005f8ffffffffffffff |   mrmovq -8(%rbp),%rax
+0x042: 2054 |   rrmovq %rbp,%rsp
+0x044: b05f |   popq %rbp
+0x046: 90 |   ret
+0x047: 30f00000000000000000 |   irmovq $0,%rax
+0x051: 2054 |   rrmovq %rbp,%rsp
+0x053: b05f |   popq %rbp
+0x055: 90 |   ret

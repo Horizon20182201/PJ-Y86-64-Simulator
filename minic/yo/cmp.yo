@@ -1,0 +1,44 @@
+0x000: 30f40010000000000000 |   irmovq $4096,%rsp
+0x00a: 801400000000000000 |   call main
+0x013: 00 |   halt
+0x014: a05f |   pushq %rbp
+0x016: 2045 |   rrmovq %rsp,%rbp
+0x018: 30f11800000000000000 |   irmovq $24,%rcx
+0x022: 6114 |   subq %rcx,%rsp
+0x024: 30f00a00000000000000 |   irmovq $10,%rax
+0x02e: 4005f8ffffffffffffff |   rmmovq %rax,-8(%rbp)
+0x038: 30f00300000000000000 |   irmovq $3,%rax
+0x042: 4005f0ffffffffffffff |   rmmovq %rax,-16(%rbp)
+0x04c: 5005f8ffffffffffffff |   mrmovq -8(%rbp),%rax
+0x056: a00f |   pushq %rax
+0x058: 5005f0ffffffffffffff |   mrmovq -16(%rbp),%rax
+0x062: b01f |   popq %rcx
+0x064: 6101 |   subq %rax,%rcx
+0x066: 30f00000000000000000 |   irmovq $0,%rax
+0x070: 30f20100000000000000 |   irmovq $1,%rdx
+0x07a: 2520 |   cmovge %rdx,%rax
+0x07c: 6200 |   andq %rax,%rax
+0x07e: 73b600000000000000 |   je ELSE
+0x087: 5005f8ffffffffffffff |   mrmovq -8(%rbp),%rax
+0x091: a00f |   pushq %rax
+0x093: 5005f0ffffffffffffff |   mrmovq -16(%rbp),%rax
+0x09d: b01f |   popq %rcx
+0x09f: 6101 |   subq %rax,%rcx
+0x0a1: 2010 |   rrmovq %rcx,%rax
+0x0a3: 4005e8ffffffffffffff |   rmmovq %rax,-24(%rbp)
+0x0ad: 70dc00000000000000 |   jmp ENDIF
+0x0b6: 5005f0ffffffffffffff |   mrmovq -16(%rbp),%rax
+0x0c0: a00f |   pushq %rax
+0x0c2: 5005f8ffffffffffffff |   mrmovq -8(%rbp),%rax
+0x0cc: b01f |   popq %rcx
+0x0ce: 6101 |   subq %rax,%rcx
+0x0d0: 2010 |   rrmovq %rcx,%rax
+0x0d2: 4005e8ffffffffffffff |   rmmovq %rax,-24(%rbp)
+0x0dc: 5005e8ffffffffffffff |   mrmovq -24(%rbp),%rax
+0x0e6: 2054 |   rrmovq %rbp,%rsp
+0x0e8: b05f |   popq %rbp
+0x0ea: 90 |   ret
+0x0eb: 30f00000000000000000 |   irmovq $0,%rax
+0x0f5: 2054 |   rrmovq %rbp,%rsp
+0x0f7: b05f |   popq %rbp
+0x0f9: 90 |   ret
